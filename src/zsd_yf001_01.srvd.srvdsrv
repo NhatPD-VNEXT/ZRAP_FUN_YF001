@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_YF001_01'
+define service ZSD_YF001_01 {
+  expose ZC_YF001_01;
+}

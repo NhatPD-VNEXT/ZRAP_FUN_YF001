@@ -1,0 +1,180 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'パラメータテーブル更新画面（ZY043T)', 
+    typeNamePlural: 'パラメータテーブル更新画面（ZY043T)'
+  }
+}
+annotate view ZC_YF001_01 with
+{
+  @UI.facet: [ {
+    id: 'idIdentification', 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'パラメータテーブル更新画面（ZY043T)', 
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  @Consumption:{
+    valueHelpDefinition: [{
+        entity:{
+          name:    'ZI_ZY043T_DIV_VH',
+          element: 'div'
+        }}]}
+  Div;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  @Consumption:{
+    valueHelpDefinition: [{
+        entity:{
+          name:    'ZI_ZY043T_ZZTYPE_VH',
+          element: 'zztype'
+        }}]}
+  Zztype;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  Zzseqno;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  @Consumption:{
+    valueHelpDefinition: [{
+        entity:{
+          name:    'ZI_ZY043T_ZZTYPET_VH',
+          element: 'zztypename'
+        }}]}
+  Zztypename;
+  
+  @UI.lineItem: [ {
+    position: 50 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  Zzvalue01;
+  
+  @UI.lineItem: [ {
+    position: 60 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  Zzvalue02;
+  
+  @UI.lineItem: [ {
+    position: 70 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  Zzvalue03;
+  
+  @UI.lineItem: [ {
+    position: 80 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  Zzvalue04;
+  
+  @UI.lineItem: [ {
+    position: 90 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  Zzvalue05;
+  
+  @UI.lineItem: [ {
+    position: 100 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  Zzvalue06;
+  
+  @UI.lineItem: [ {
+    position: 110 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  Zzvalue07;
+  
+  @UI.lineItem: [ {
+    position: 120 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  Zzvalue08;
+
+  @UI.lineItem: [ {
+  position: 130 ,
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 130
+  } ]
+  @UI.selectionField: [{position: 40}]
+  @Consumption:{
+    valueHelpDefinition: [{
+        entity:{
+          name:    'ZI_I_USER_VH',
+          element: 'UserID'
+        }}]}
+  Lastchangedby;
+    
+  @UI.lineItem: [ {
+    position: 140 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.selectionField: [{position: 50}]
+  @Consumption.filter: {
+    selectionType:      #INTERVAL,
+    multipleSelections: false
+  }
+  LocalLastChangedAt;
+}

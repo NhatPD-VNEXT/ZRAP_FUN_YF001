@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "パラメータテーブル 管理",
+    "originalLanguage": "ja",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "パラメータテーブル 管理"
+  },
+  "ui5AppDetails": {
+    "appId": "zsbu4yf00101"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3FA3F9E929246EC1E0D4715B98F30ECE5F64A610_TM",
+    "semanticObject": "ZSB_U4_YF001_01",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3FA3F9E929246EC1E0D4715B98F30ECE5F64A610_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "パラメータテーブル 管理",
+        "subtitle": "ZC_YF001_01"
+      }
+    }
+  ]
+}

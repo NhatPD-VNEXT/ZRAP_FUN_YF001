@@ -1,0 +1,56 @@
+managed implementation in class ZBP_I_YF001_01 unique;
+strict ( 2 );
+with draft;
+define behavior for ZI_YF001_01
+persistent table zy043t
+draft table ZY043T_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   Div,
+   Zztype,
+   Zzseqno;
+
+  field ( readonly )
+   Lastchangedby,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Div,
+   Zztype,
+   Zzseqno;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZY043T
+  {
+    Div = div;
+    Zztype = zztype;
+    Zzseqno = zzseqno;
+    Zztypename = zztypename;
+    Zzvalue01 = zzvalue01;
+    Zzvalue02 = zzvalue02;
+    Zzvalue03 = zzvalue03;
+    Zzvalue04 = zzvalue04;
+    Zzvalue05 = zzvalue05;
+    Zzvalue06 = zzvalue06;
+    Zzvalue07 = zzvalue07;
+    Zzvalue08 = zzvalue08;
+    Lastchangedby = lastchangedby;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
